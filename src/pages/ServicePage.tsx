@@ -1,11 +1,12 @@
-import Header from "../components/Header";
+
 import SectionTitle from "../components/SectionTitle";
+import Layout from "../layout/Layout";
 import { services } from "../statics/data";
 
 function ServicePage() {
   return (
-    <div className="w-full flex flex-col items-center ">
-      <Header active="Service" />
+    <Layout active="Services">
+     
       <section
         className="pt-[180px] text-white flex  items-center w-full justify-center lg:px-[100px] xl:max-w-[1780px] px-[10px]"
         id="service"
@@ -40,7 +41,7 @@ function ServicePage() {
           </div>
         </div>
       </section>
-    </div>
+    </Layout>
   );
 }
 

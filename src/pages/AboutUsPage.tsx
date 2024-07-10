@@ -1,5 +1,4 @@
 
-import Header from "../components/Header";
 import SectionTitle from "../components/SectionTitle";
 import { analytics, skills } from "../statics/data";
 import CountUp from "react-countup";
