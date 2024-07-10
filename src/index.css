@@ -60,3 +60,12 @@ header *{
 .highcharts-yaxis-grid{
   display: none !important;
 }
+.service-card:hover{
+@apply bg-green-500
+}
+.service-card:hover .green-card{
+  @apply bg-white
+}
+.service-card:hover .gray-card{
+  @apply bg-green-400
+}

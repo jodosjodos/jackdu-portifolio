@@ -4,12 +4,13 @@ import SectionTitle from "../components/SectionTitle";
 import { analytics, skills } from "../statics/data";
 import CountUp from "react-countup";
 import SkillProgress from "../components/SkillProgress";
+import Layout from "../layout/Layout";
 
 function AboutUsPage() {
   
   return (
-    <div className="w-full flex flex-col items-center ">
-      <Header active="About" />
+    <Layout active="About">
+      
       <section
         className=" pt-[180px] text-white flex items-center w-full justify-center lg:px-[100px] xl:max-w-[1520px] px-[10px]"
         id="about"
@@ -98,11 +99,11 @@ function AboutUsPage() {
               </div>
             ))}
           </div>
-          <div className="py-[30px] px-[20px]">
+          <div className="py-[30px] lg:px-[20px] ">
             <SectionTitle title="SKILLS" />
             <div className="w-full flex   lg:flex-row  flex-col items-center gap-[40px]">
               {skills.map((skill) => (
-                <div className="lg:w-[50%]">
+                <div className="lg:w-[50%] w-full">
                   <SkillProgress categories={skill.categories} seriesData={skill.percentage} />
                 </div>
               ))}
@@ -112,7 +113,7 @@ function AboutUsPage() {
           </div>
         </div>
       </section>
-    </div>
+    </Layout>
   );
 }
 

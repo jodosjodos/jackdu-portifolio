@@ -5,9 +5,10 @@ import {  HashRouter, Route, Routes } from 'react-router-dom'
 import HomePage from './pages/HomePage'
 
 import AboutUsPage from './pages/AboutUsPage'
-import TimelineIcons from './components/Timeline'
+
 import ServicePage from './pages/ServicePage'
 import PortfolioPage from './pages/PortifolioPage'
+import ResumePage from './pages/ResumePage'
 
 function App() {
 
@@ -19,7 +20,7 @@ function App() {
         <Route path="/about" element={<AboutUsPage />} />
           <Route path="/services" element={<ServicePage />} />
           <Route path="/portfolio" element={<PortfolioPage />} />
-          <Route path="/resume" element={<TimelineIcons />} />
+          <Route path="/resume" element={<ResumePage />} />
           <Route path="/contact" element={<HomePage />} />
           
         
