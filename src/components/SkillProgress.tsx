@@ -1,4 +1,4 @@
-import Highcharts from "highcharts";
+import Highcharts, { TooltipFormatterContextObject } from "highcharts";
 import HighchartsReact from "highcharts-react-official";
 
 const SkillProgress = ({
@@ -44,7 +44,7 @@ const SkillProgress = ({
       gridLineWidth: 0,
     },
     tooltip: {
-      formatter: function () {
+      formatter: function (this:TooltipFormatterContextObject) {
         return (
           "<b>" +
           this.x +
@@ -55,6 +55,7 @@ const SkillProgress = ({
           "<br/>"
         );
       },
+      //@ts-ignore
       positioner: function (labelWidth: any, labelHeight, point) {
         var tooltipX = point.plotX + 20;
         var tooltipY = point.plotY - 30;
