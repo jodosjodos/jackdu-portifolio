@@ -3,7 +3,7 @@ export const headers: { name: string; to: string }[] = [
   { name: "About", to: "/#/about" },
   { name: "Resume", to: "/#/resume" },
   { name: "Services", to: "/#/services" },
-  { name: "Portifolio", to: "/#/portifolio" },
+  { name: "Portfolio", to: "/#/portfolio" },
 ];
 
 export const analytics: { title: string; count: number }[] = [

@@ -6,6 +6,8 @@ import HomePage from './pages/HomePage'
 
 import AboutUsPage from './pages/AboutUsPage'
 import TimelineIcons from './components/Timeline'
+import ServicePage from './pages/ServicePage'
+import PortfolioPage from './pages/PortifolioPage'
 
 function App() {
 
@@ -15,10 +17,10 @@ function App() {
       <Routes>
         <Route path='/' element={<HomePage />}/>
         <Route path="/about" element={<AboutUsPage />} />
-          <Route path="/services" element={<HomePage />} />
-          <Route path="/portfolio" element={<HomePage />} />
+          <Route path="/services" element={<ServicePage />} />
+          <Route path="/portfolio" element={<PortfolioPage />} />
           <Route path="/resume" element={<TimelineIcons />} />
-          <Route path="/contactus" element={<HomePage />} />
+          <Route path="/contact" element={<HomePage />} />
           
         
       </Routes>
